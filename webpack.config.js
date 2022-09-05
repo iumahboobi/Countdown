@@ -20,7 +20,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "src/index.html",  // added manually -  index.html in the root? eww
+      template: "index.html",  // added manually -  index.html in the root? eww
     }),
     new CopyWebpackPlugin({
       patterns: [{from:'src/images',to:'images'}]
