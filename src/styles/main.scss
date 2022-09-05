@@ -41,6 +41,7 @@ body {
       color: $secondary-color;
       letter-spacing: 4px;
       font-style: italic;
+      // font-size: 1rem;
     }
     .box {
       width: 100%;
@@ -73,7 +74,7 @@ body {
             font-style: italic;
             list-style-type: none;
             align-items: baseline;
-            font-size: 1.5rem;
+            font-size: 1rem;
             letter-spacing: 3px;
           }
           .periods li {
@@ -83,7 +84,7 @@ body {
           .digit-Font {
             font-family: 'Fraunces', serif;
             color: $white;
-            font-size: 2rem;
+            font-size: 1.5rem;
             align-items: baseline;
             margin-right: 1rem;
           }
@@ -102,9 +103,10 @@ body {
     h3 {
       text-align: center;
       color: $secondary-color;
-      font-size: 1.2rem;
+      // font-size: 1.2rem;
       letter-spacing: 4px;
       font-style: italic;
+      // font-size: 1.0rem;
     }
 
     .input-container {
@@ -157,6 +159,9 @@ body {
 
     .contents {
       height: 90vh;
+      h1 {
+        font-size: 3rem;
+      }
     }
   }
   .count-down-info {
@@ -167,5 +172,10 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     height: 130px;
+  }
+ 
+
+  .header-three {
+    font-size: 3rem;
   }
 }
