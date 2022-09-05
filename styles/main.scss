@@ -1,0 +1,171 @@
+// This is where your styles can go :)
+// the existing styles are just a placeholder, feel free to delete :)
+
+// $primary-color: #06076c;
+$primary-color: #3f1651;
+$background-color: #2b1638;
+$secondary-color: #f89f5b;
+$reddish-light: #f64c72;
+$white: #ffff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.padding {
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+  background-color: $background-color;
+}
+
+.container {
+  // background-color: #4600b7;
+  // background-color: #242582;
+  background-color: $primary-color;
+
+  max-width: 820px;
+  margin: 0 auto;
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+
+    h1 {
+      color: $secondary-color;
+      letter-spacing: 4px;
+      font-style: italic;
+    }
+    .box {
+      width: 100%;
+
+      .image-box {
+        position: relative;
+        background-image: url('https://images.unsplash.com/photo-1603455778956-d71832eafa4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fHJ1bm5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+        alt: 'Background-image';
+        background-size: cover;
+        height: 350px;
+        background-position: center;
+
+        .banner-after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgb(10 16 64 / 83%);
+        }
+
+        .count-down-info {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 6rem auto;
+
+          .list-items {
+            color: $secondary-color;
+            font-style: italic;
+            list-style-type: none;
+            align-items: baseline;
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+          }
+          .periods li {
+            margin-top: 0.5rem;
+            color: #e53f71;
+          }
+          .digit-Font {
+            font-family: 'Fraunces', serif;
+            color: $white;
+            font-size: 2rem;
+            align-items: baseline;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // 3 . Form Contents
+  .form-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 225px;
+
+    h3 {
+      text-align: center;
+      color: $secondary-color;
+      font-size: 1.2rem;
+      letter-spacing: 4px;
+      font-style: italic;
+    }
+
+    .input-container {
+      border-bottom: solid 2px #333333;
+    }
+    .input-container input {
+      border: none;
+      box-sizing: border-box;
+      outline: 0;
+      padding: 0.75rem;
+      width: 100%;
+      background: rgba(204, 192, 192, 0.178);
+      color: $white;
+      letter-spacing: 4px;
+    }
+    ::-webkit-calendar-picker-indicator {
+      filter: invert(1);
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .btn {
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        background-color: transparent;
+        border: solid 2px $secondary-color;
+        color: $white;
+        font-size: 1rem;
+        letter-spacing: 4px;
+      }
+      .btn:hover {
+        background-color: rgba(197, 44, 44, 0.521);
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 821px) {
+  body {
+    background-color: $background-color;
+  }
+
+  .container {
+    margin: 3rem auto;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px 5px rebeccapurple;
+
+    .contents {
+      height: 90vh;
+    }
+  }
+  .count-down-info {
+    flex-direction: column;
+  }
+  .list-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 130px;
+  }
+}
